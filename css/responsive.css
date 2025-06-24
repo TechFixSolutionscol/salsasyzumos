@@ -42,13 +42,109 @@
     }
 
     .contact_section {
-        padding-left: 15px;
-        padding-right: 15px;
+        padding: 40px 15px;
+    }
+
+    .contact_section .custom_heading-container {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .contact_section .custom_heading-container h2 {
+        font-size: 28px;
+        word-break: break-word;
+        max-width: 100%;
+    }
+
+    .contact_section .custom_heading-container p {
+        font-size: 1rem !important;
+        line-height: 1.5;
+        word-break: break-word;
+        max-width: 100%;
+        margin: 10px 0 0 0 !important;
+    }
+
+    .contact_section .form_contaier {
+        margin-bottom: 30px;
+    }
+
+    .contact_section .form_contaier form .form-group {
+        margin-bottom: 15px;
+    }
+
+    .contact_section .form_contaier form .form-control {
+        height: 45px;
+        font-size: 16px;
+        padding: 10px 15px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    .contact_section .form_contaier form textarea.form-control {
+        height: 100px;
+        resize: vertical;
+        min-height: 100px;
+    }
+
+    .contact_section .form_contaier form button {
+        width: 100%;
+        padding: 12px 20px;
+        font-size: 16px;
+        margin-top: 20px;
     }
 
     .contact_section .detail-box {
-        margin: 0 -15px;
-        margin-top: 25px;
+        padding: 40px 20px;
+        margin-top: 20px;
+        text-align: center;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .contact_section .detail-box h3 {
+        font-size: 24px;
+        margin-bottom: 15px;
+        word-break: break-word;
+    }
+
+    .contact_section .detail-box p {
+        font-size: 14px;
+        line-height: 1.6;
+        margin-top: 15px;
+        word-break: break-word;
+    }
+
+    .contact_section .detail-box ul {
+        margin-top: 20px;
+        padding-left: 0;
+    }
+
+    .contact_section .detail-box ul li {
+        margin-bottom: 10px;
+        font-size: 14px;
+        word-break: break-word;
+        line-height: 1.4;
+    }
+
+    .contact-info {
+        text-align: center;
+        padding: 20px 15px;
+        margin-top: 30px;
+    }
+
+    .contact-info p {
+        margin-bottom: 8px;
+        font-size: 14px;
+        word-break: break-word;
+        line-height: 1.4;
+    }
+
+    .contact-info p:last-child {
+        margin-top: 15px;
+        font-size: 16px;
     }
 
     .info_section {
@@ -66,6 +162,42 @@
     .footer_section p {
         width: auto;
     }
+
+    .whatsapp-float-container {
+        right: 15px;
+        bottom: 20px;
+    }
+
+    .whatsapp-label {
+        font-size: 0.9rem;
+        padding: 3px 10px;
+    }
+
+    .whatsapp-float {
+        width: 44px;
+        height: 44px;
+    }
+
+    .whatsapp-float img {
+        width: 28px;
+        height: 28px;
+    }
+
+    .contact-description {
+        font-size: 1rem !important;
+        line-height: 1.6;
+        padding: 0 15px;
+        margin: 10px 0 0 0;
+    }
+
+    .custom_heading-container {
+        padding: 0 20px;
+    }
+    
+    .custom_heading-container h2 {
+        font-size: 28px;
+        line-height: 1.2;
+    }
 }
 
 @media (max-width: 576px) {
@@ -73,9 +205,211 @@
         width: auto;
         margin-right: 5px;
     }
+
+    .contact_section {
+        padding: 30px 10px;
+    }
+
+    .contact_section .custom_heading-container h2 {
+        font-size: 24px;
+    }
+
+    .contact_section .custom_heading-container p {
+        font-size: 0.95rem !important;
+        padding: 0 5px;
+    }
+
+    .contact_section .form_contaier form .form-control {
+        height: 50px;
+        font-size: 16px;
+        padding: 12px 15px;
+    }
+
+    .contact_section .form_contaier form textarea.form-control {
+        height: 120px;
+        min-height: 120px;
+    }
+
+    .contact_section .form_contaier form button {
+        padding: 15px 20px;
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .contact_section .detail-box {
+        padding: 30px 15px;
+    }
+
+    .contact_section .detail-box h3 {
+        font-size: 22px;
+    }
+
+    .contact_section .detail-box p {
+        font-size: 13px;
+    }
+
+    .contact_section .detail-box ul li {
+        font-size: 13px;
+    }
+
+    .contact-info {
+        padding: 15px 10px;
+    }
+
+    .contact-info p {
+        font-size: 13px;
+    }
+
+    .contact-info p:last-child {
+        font-size: 15px;
+    }
+
+    .whatsapp-float-container {
+        right: 10px;
+        bottom: 15px;
+    }
+
+    .whatsapp-label {
+        font-size: 0.85rem;
+        padding: 2px 8px;
+    }
+
+    .whatsapp-float {
+        width: 40px;
+        height: 40px;
+    }
+
+    .whatsapp-float img {
+        width: 24px;
+        height: 24px;
+    }
+
+    .contact-description {
+        font-size: 0.95rem !important;
+        line-height: 1.7;
+        padding: 0 20px;
+        margin: 12px 0 0 0;
+    }
+
+    .custom_heading-container {
+        padding: 0 25px;
+    }
+    
+    .custom_heading-container h2 {
+        font-size: 24px;
+    }
 }
 
-@media (max-width: 480px) {}
+@media (max-width: 480px) {
+    .contact_section {
+        padding: 25px 8px;
+    }
+
+    .contact_section .custom_heading-container h2 {
+        font-size: 22px;
+    }
+
+    .contact_section .custom_heading-container p {
+        font-size: 0.9rem !important;
+        padding: 0 3px;
+    }
+
+    .contact_section .form_contaier form .form-control {
+        height: 48px;
+        padding: 10px 12px;
+    }
+
+    .contact_section .form_contaier form textarea.form-control {
+        height: 100px;
+        min-height: 100px;
+    }
+
+    .contact_section .detail-box {
+        padding: 25px 12px;
+    }
+
+    .contact_section .detail-box h3 {
+        font-size: 20px;
+    }
+
+    .contact_section .detail-box p {
+        font-size: 12px;
+    }
+
+    .contact_section .detail-box ul li {
+        font-size: 12px;
+    }
+
+    .contact-info {
+        padding: 12px 8px;
+    }
+
+    .contact-info p {
+        font-size: 12px;
+    }
+
+    .contact-info p:last-child {
+        font-size: 14px;
+    }
+
+    .contact-description {
+        font-size: 0.9rem !important;
+        line-height: 1.8;
+        padding: 0 25px;
+        margin: 15px 0 0 0;
+    }
+
+    .custom_heading-container {
+        padding: 0 30px;
+    }
+    
+    .custom_heading-container h2 {
+        font-size: 22px;
+    }
+}
+
+/* Mejoras generales para formularios responsivos */
+.contact_section .form_contaier form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact_section .form_contaier form .form-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.contact_section .form_contaier form label {
+    margin-bottom: 5px;
+    font-weight: 500;
+    font-size: 14px;
+    color: #333;
+}
+
+.contact_section .form_contaier form .form-control:focus {
+    border-color: #3a5d3a;
+    box-shadow: 0 0 0 0.2rem rgba(58, 93, 58, 0.25);
+    outline: none;
+}
+
+/* Mejoras para el contenedor de información de contacto */
+.contact-info {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    border: 1px solid #e9ecef;
+}
+
+.contact-info p {
+    margin-bottom: 8px;
+    color: #495057;
+}
+
+.contact-info p strong {
+    color: #3a5d3a;
+    font-weight: 600;
+}
 
 @media (max-width: 420px) {}
 
@@ -83,10 +417,58 @@
     .top_contact-container {
         display: none !important;
     }
+
+    .contact-description {
+        font-size: 0.85rem !important;
+        line-height: 1.9;
+        padding: 0 30px;
+        margin: 18px 0 0 0;
+    }
+
+    .custom_heading-container {
+        padding: 0 35px;
+    }
+    
+    .custom_heading-container h2 {
+        font-size: 20px;
+    }
 }
 
 @media (min-width: 1200px) {
     .container {
         max-width: 1170px;
     }
+}
+
+/* Estilos responsivos específicos para la descripción de contacto */
+.contact-description {
+    max-width: 100%;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+    line-height: 1.5;
+    margin: 8px 0 0 0;
+    padding: 0 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+/* Mejoras responsivas para el contenedor de encabezado */
+.custom_heading-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 0 15px;
+}
+
+.custom_heading-container h2 {
+    max-width: 100%;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    margin-bottom: 15px;
 }

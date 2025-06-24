@@ -35,6 +35,12 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 .custom_heading-container h2 {
@@ -783,133 +789,247 @@ a:focus {
   display: none;
 }
 
-.contact_section .custom_heading-container {
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
+.contact_section {
+  overflow: hidden;
 }
 
-.contact_section .custom_heading-container h2::after {
-  left: 0;
-  -webkit-transform: none;
-          transform: none;
+.contact_section .custom_heading-container {
+  margin-bottom: 40px;
+}
+
+.contact_section .custom_heading-container h2 {
+  margin-bottom: 15px;
+  line-height: 1.2;
+}
+
+.contact_section .custom_heading-container p {
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.contact_section .form_contaier {
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 15px rgba(0,0,0,0.1);
 }
 
 .contact_section .form_contaier form .form-group {
   margin-bottom: 20px;
 }
 
-.contact_section .form_contaier form .form-control {
-  border-radius: 0;
-  height: 35px;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+.contact_section .form_contaier form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #333;
 }
 
-.contact_section .form_contaier form .form-control#exampleInputMessage {
-  height: 100px;
+.contact_section .form_contaier form .form-control {
+  width: 100%;
+  padding: 12px 15px;
+  border: 2px solid #e9ecef;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  box-sizing: border-box;
+}
+
+.contact_section .form_contaier form .form-control:focus {
+  border-color: #3a5d3a;
+  box-shadow: 0 0 0 0.2rem rgba(58, 93, 58, 0.15);
+  outline: none;
+}
+
+.contact_section .form_contaier form textarea.form-control {
+  min-height: 120px;
+  resize: vertical;
 }
 
 .contact_section .form_contaier form button {
-  display: inline-block;
-  padding: 10px 50px;
-  background-color: #121313;
-  border: 1px solid #121313;
-  color: #ffffff;
-  border-radius: 5px;
-  margin-top: 15px;
+  background-color: #3a5d3a;
+  border-color: #3a5d3a;
+  color: #fff;
+  padding: 12px 30px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  width: 100%;
+  margin-top: 10px;
 }
 
 .contact_section .form_contaier form button:hover {
-  background-color: transparent;
-  color: #121313;
+  background-color: #2d4a2d;
+  border-color: #2d4a2d;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(58, 93, 58, 0.3);
 }
 
 .contact_section .detail-box {
   background-image: url(../images/contact-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   color: #ffffff;
-  padding: 140px 15%;
+  padding: 50px 30px;
   text-align: center;
-  margin-top: 30px;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.contact_section .detail-box::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(58, 93, 58, 0.8);
+  z-index: 1;
+}
+
+.contact_section .detail-box h3,
+.contact_section .detail-box p,
+.contact_section .detail-box ul {
+  position: relative;
+  z-index: 2;
 }
 
 .contact_section .detail-box h3 {
-  font-weight: bold;
-  font-size: 32px;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  line-height: 1.2;
 }
 
 .contact_section .detail-box p {
-  margin-top: 25px;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 25px;
 }
 
-.info_section {
-  background-color: #121111;
-  color: #ffffff;
-}
-
-.info_section h4 {
-  text-transform: uppercase;
-  font-weight: bold;
-}
-
-.info_section .info_contact .box {
-  margin: 10px 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.info_section .info_contact .box .img-box {
-  margin-right: 15px;
-}
-
-.info_section .info_contact .box .img-box img {
-  width: 25px;
-}
-
-.info_section .info_menu .navbar-nav .nav-item .nav-link {
-  color: #ffffff;
-}
-
-.info_section .info_news form input {
-  width: 100%;
-  padding: 3px 10px;
-}
-
-.info_section .info_news form button {
-  display: inline-block;
-  padding: 7px 60px;
-  background-color: #7c217c;
-  border: 1px solid #7c217c;
-  color: #ffffff;
-}
-
-.info_section .info_news form button:hover {
-  background-color: #b94cb9;
-  color: #ffffff;
-}
-
-/* footer section*/
-.footer_section {
-  background-color: #121111;
-  font-weight: 500;
-}
-
-.footer_section p {
-  color: #fbfcfd;
+.contact_section .detail-box ul {
+  list-style: none;
+  padding: 0;
   margin: 0;
+}
+
+.contact_section .detail-box ul li {
+  margin-bottom: 12px;
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+.contact_section .detail-box ul li b {
+  color: #10e7f4;
+  font-weight: 600;
+}
+
+.contact-info {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  border: 1px solid #dee2e6;
+  border-radius: 10px;
+  padding: 25px;
   text-align: center;
-  padding: 20px;
-  border-top: 1px solid #9b9b9b;
-  width: 65%;
-  margin: 0 auto;
+  margin-top: 40px;
 }
 
-.footer_section a {
-  color: #fbfcfd;
+.contact-info p {
+  margin-bottom: 10px;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #495057;
 }
 
-/* end footer section*/
+.contact-info p strong {
+  color: #3a5d3a;
+  font-weight: 600;
+}
+
+.contact-info p:last-child {
+  margin-top: 20px;
+  margin-bottom: 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #28a745;
+}
+
+/* Responsive improvements for contact section */
+@media (max-width: 991px) {
+  .contact_section .form_contaier {
+    padding: 25px;
+    margin-bottom: 30px;
+  }
+  
+  .contact_section .detail-box {
+    padding: 40px 25px;
+  }
+  
+  .contact_section .detail-box h3 {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 767px) {
+  .contact_section .form_contaier {
+    padding: 20px;
+  }
+  
+  .contact_section .detail-box {
+    padding: 35px 20px;
+  }
+  
+  .contact_section .detail-box h3 {
+    font-size: 24px;
+  }
+  
+  .contact_section .detail-box p {
+    font-size: 15px;
+  }
+  
+  .contact-info {
+    padding: 20px;
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 575px) {
+  .contact_section .form_contaier {
+    padding: 15px;
+  }
+  
+  .contact_section .detail-box {
+    padding: 30px 15px;
+  }
+  
+  .contact_section .detail-box h3 {
+    font-size: 22px;
+  }
+  
+  .contact_section .detail-box p {
+    font-size: 14px;
+  }
+  
+  .contact_section .detail-box ul li {
+    font-size: 14px;
+  }
+  
+  .contact-info {
+    padding: 15px;
+  }
+  
+  .contact-info p {
+    font-size: 14px;
+  }
+  
+  .contact-info p:last-child {
+    font-size: 15px;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
 
 .btn-whatsapp {
@@ -1056,3 +1176,74 @@ a:focus {
   color: #fff !important;
   border: 1px solid #b94cb9 !important;
 }
+
+.info_section {
+  background-color: #121111;
+  color: #ffffff;
+}
+
+.info_section h4 {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.info_section .info_contact .box {
+  margin: 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.info_section .info_contact .box .img-box {
+  margin-right: 15px;
+}
+
+.info_section .info_contact .box .img-box img {
+  width: 25px;
+}
+
+.info_section .info_menu .navbar-nav .nav-item .nav-link {
+  color: #ffffff;
+}
+
+.info_section .info_news form input {
+  width: 100%;
+  padding: 3px 10px;
+}
+
+.info_section .info_news form button {
+  display: inline-block;
+  padding: 7px 60px;
+  background-color: #7c217c;
+  border: 1px solid #7c217c;
+  color: #ffffff;
+}
+
+.info_section .info_news form button:hover {
+  background-color: #b94cb9;
+  color: #ffffff;
+}
+
+/* footer section*/
+.footer_section {
+  background-color: #121111;
+  font-weight: 500;
+}
+
+.footer_section p {
+  color: #fbfcfd;
+  margin: 0;
+  text-align: center;
+  padding: 20px;
+  border-top: 1px solid #9b9b9b;
+  width: 65%;
+  margin: 0 auto;
+}
+
+.footer_section a {
+  color: #fbfcfd;
+}
+
+/* end footer section*/
+
+/*# sourceMappingURL=style.css.map */

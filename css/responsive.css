@@ -14,10 +14,18 @@
 
     .hero_area {
         height: auto;
+        min-height: auto;
+        max-height: none;
+        margin-bottom: 0;
     }
 
     .slider_section.position-relative {
         padding: 120px 0;
+    }
+    
+    .contact_section.layout_padding {
+        padding-top: 80px;
+        padding-bottom: 80px;
     }
 }
 
@@ -43,6 +51,11 @@
 
     .contact_section {
         padding: 40px 15px;
+    }
+    
+    .contact_section.layout_padding {
+        padding-top: 60px;
+        padding-bottom: 60px;
     }
 
     .contact_section .custom_heading-container {
@@ -209,6 +222,11 @@
     .contact_section {
         padding: 30px 10px;
     }
+    
+    .contact_section.layout_padding {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
 
     .contact_section .custom_heading-container h2 {
         font-size: 24px;
@@ -303,6 +321,11 @@
 @media (max-width: 480px) {
     .contact_section {
         padding: 25px 8px;
+    }
+    
+    .contact_section.layout_padding {
+        padding-top: 40px;
+        padding-bottom: 40px;
     }
 
     .contact_section .custom_heading-container h2 {
@@ -471,4 +494,246 @@
     word-break: break-word;
     overflow-wrap: break-word;
     margin-bottom: 15px;
+}
+
+/* Estilos responsivos para el carrusel health_section mejorado */
+@media (max-width: 991px) {
+  .health_section {
+    padding: 60px 0;
+  }
+  
+  .health_section .health_carousel-container h2 {
+    font-size: 2.2rem;
+    margin-bottom: 40px;
+  }
+  
+  .health_section .box {
+    min-width: 260px;
+    max-width: 320px;
+    min-height: 420px;
+  }
+  
+  .health_section .box .img-box {
+    padding: 25px 15px 15px 15px;
+    min-height: 180px;
+  }
+  
+  .health_section .box .img-box img {
+    max-height: 140px;
+  }
+}
+
+@media (max-width: 768px) {
+  .health_section {
+    padding: 50px 0;
+  }
+  
+  .health_section .health_carousel-container {
+    width: 95%;
+  }
+  
+  .health_section .health_carousel-container h2 {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+  }
+  
+  .health_section .box {
+    min-width: 240px;
+    max-width: 300px;
+    min-height: 400px;
+    margin: 15px 8px;
+  }
+  
+  .health_section .box .img-box {
+    padding: 20px 12px 12px 12px;
+    min-height: 160px;
+  }
+  
+  .health_section .box .img-box img {
+    max-height: 120px;
+  }
+  
+  .health_section .box .detail-box {
+    padding: 15px 15px 0 15px;
+  }
+  
+  .health_section .box .detail-box .text h6 {
+    font-size: 1rem;
+  }
+  
+  .health_section .box .detail-box .text p {
+    font-size: 0.9rem;
+  }
+  
+  .health_section .box .detail-box .text h6.price {
+    font-size: 1.2rem;
+  }
+  
+  .health_section .owl-carousel .owl-nav.disabled > div {
+    top: -70px;
+    width: 45px;
+    height: 45px;
+    background-size: 14px;
+  }
+  
+  .health_section .owl-carousel .owl-nav.disabled .owl-prev {
+    right: 85px;
+  }
+  
+  .health_section .owl-carousel .owl-nav.disabled .owl-next {
+    right: 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  .health_section {
+    padding: 40px 0;
+  }
+  
+  .health_section .health_carousel-container {
+    width: 100%;
+    padding: 0 15px;
+  }
+  
+  .health_section .health_carousel-container h2 {
+    font-size: 1.6rem;
+    margin-bottom: 25px;
+  }
+  
+  .health_section .box {
+    min-width: 220px;
+    max-width: 280px;
+    min-height: 380px;
+    margin: 10px 5px;
+  }
+  
+  .health_section .box .img-box {
+    padding: 18px 10px 10px 10px;
+    min-height: 140px;
+  }
+  
+  .health_section .box .img-box img {
+    max-height: 100px;
+  }
+  
+  .health_section .box .detail-box {
+    padding: 12px 12px 0 12px;
+  }
+  
+  .health_section .box .detail-box .star_container {
+    font-size: 1rem;
+    margin-bottom: 8px;
+  }
+  
+  .health_section .box .detail-box .text h6 {
+    font-size: 0.95rem;
+  }
+  
+  .health_section .box .detail-box .text p {
+    font-size: 0.85rem;
+    margin-bottom: 10px;
+  }
+  
+  .health_section .box .detail-box .text h6.price {
+    font-size: 1.1rem;
+    padding: 6px 12px;
+  }
+  
+  .health_section .box .btn_container {
+    padding: 0 12px;
+  }
+  
+  .health_section .box .btn_container a {
+    padding: 10px 16px;
+    font-size: 0.85rem;
+  }
+  
+  .health_section .owl-carousel .owl-nav.disabled > div {
+    top: -60px;
+    width: 40px;
+    height: 40px;
+    background-size: 12px;
+  }
+  
+  .health_section .owl-carousel .owl-nav.disabled .owl-prev {
+    right: 75px;
+  }
+  
+  .health_section .owl-carousel .owl-nav.disabled .owl-next {
+    right: 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .health_section {
+    padding: 30px 0;
+  }
+  
+  .health_section .health_carousel-container h2 {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+  }
+  
+  .health_section .box {
+    min-width: 200px;
+    max-width: 260px;
+    min-height: 360px;
+    margin: 8px 4px;
+  }
+  
+  .health_section .box .img-box {
+    padding: 15px 8px 8px 8px;
+    min-height: 120px;
+  }
+  
+  .health_section .box .img-box img {
+    max-height: 90px;
+  }
+  
+  .health_section .box .detail-box {
+    padding: 10px 10px 0 10px;
+  }
+  
+  .health_section .box .detail-box .star_container {
+    font-size: 0.9rem;
+    margin-bottom: 6px;
+  }
+  
+  .health_section .box .detail-box .text h6 {
+    font-size: 0.9rem;
+  }
+  
+  .health_section .box .detail-box .text p {
+    font-size: 0.8rem;
+    margin-bottom: 8px;
+  }
+  
+  .health_section .box .detail-box .text h6.price {
+    font-size: 1rem;
+    padding: 5px 10px;
+  }
+  
+  .health_section .box .btn_container {
+    padding: 0 10px;
+  }
+  
+  .health_section .box .btn_container a {
+    padding: 8px 14px;
+    font-size: 0.8rem;
+  }
+  
+  .health_section .owl-carousel .owl-nav.disabled > div {
+    top: -55px;
+    width: 35px;
+    height: 35px;
+    background-size: 10px;
+  }
+  
+  .health_section .owl-carousel .owl-nav.disabled .owl-prev {
+    right: 65px;
+  }
+  
+  .health_section .owl-carousel .owl-nav.disabled .owl-next {
+    right: 20px;
+  }
 }

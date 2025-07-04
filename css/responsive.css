@@ -737,3 +737,7 @@
     right: 20px;
   }
 }
+
+.producto-interactivo {
+  cursor: pointer;
+}

@@ -424,10 +424,11 @@ a:focus {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-align: center;
+  gap: 24px;
 }
 
 .feature_section .feature_container .box {
@@ -435,9 +436,14 @@ a:focus {
   box-shadow: 0 2px 8px rgba(0,0,0,0.05);
   background: #fff;
   border-radius: 16px;
-  padding: 24px 16px 16px 16px;
+  padding: 20px;
   text-align: center;
   transition: box-shadow 0.2s;
+  width: 100%;
+  max-width: 400px;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
 }
 
 .feature_section .feature_container .box:hover {
@@ -448,11 +454,22 @@ a:focus {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 180px;
-  margin-bottom: 16px;
+  height: 280px;
+  margin-bottom: 20px;
   background: #f7fdf6;
   border-radius: 12px;
   overflow: hidden;
+  flex: 1;
+  min-height: 280px;
+}
+
+.feature_section .feature_container .box .img-box iframe {
+  width: 100% !important;
+  height: 100% !important;
+  min-height: 280px;
+  max-height: 280px;
+  border-radius: 8px;
+  object-fit: cover;
 }
 
 .feature_section .feature_container .box .img-box img {
@@ -467,12 +484,39 @@ a:focus {
 }
 
 .feature_section .feature_container .box .detail-box {
-  margin-top: 15px;
+  margin-top: auto;
+  flex-shrink: 0;
 }
 
 .feature_section .feature_container .box .detail-box h5 {
   text-transform: uppercase;
   font-weight: bold;
+  margin-bottom: 12px;
+  font-size: 1.1rem;
+}
+
+.feature_section .feature_container .box .detail-box p {
+  margin-bottom: 0;
+  line-height: 1.5;
+  color: #666;
+}
+
+/* Estilos para el contenedor del logo */
+.logo-container {
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+}
+
+.logo-image {
+  width: 100%;
+  height: auto;
+  max-height: 300px;
+  object-fit: contain;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
 .discount_section {

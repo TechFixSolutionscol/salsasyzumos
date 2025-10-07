@@ -69,7 +69,7 @@
                   <a class="nav-link" href="buy.html"> Comprar Online </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="news.html"> Noticias </a>
+                  <a class="nav-link" href="news.html"> Videos </a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="contact.html">Contáctanos</a>
@@ -197,7 +197,7 @@
     <!-- end slider section -->
   </div>
 
-  <section class="feature_section  layout_padding">
+  <section class="feature_section layout_padding">
     <div class="container">
       <div class="feature_container">
         <div class="box">
@@ -675,6 +675,167 @@
     .whatsapp-float-container { right: 12px; bottom: 18px; }
     .whatsapp-label { font-size: 0.98rem; padding: 3px 12px; }
   }
+
+  /* Enhanced Feature Section Styles */
+  .feature_section .feature_container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .feature_section .feature_container .box {
+    border: none;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    background: #fff;
+    border-radius: 16px;
+    padding: 30px 20px;
+    text-align: center;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    width: 100%;
+    max-width: 350px;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(124, 33, 124, 0.1);
+  }
+
+  .feature_section .feature_container .box:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 40px rgba(0,0,0,0.15);
+    border-color: rgba(124, 33, 124, 0.3);
+  }
+
+  .feature_section .feature_container .box .img-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 180px;
+    margin-bottom: 20px;
+    background: #f7fdf6;
+    border-radius: 12px;
+    overflow: hidden;
+    flex: 1;
+    min-height: 180px;
+  }
+
+  .feature_section .feature_container .box .img-box img {
+    max-height: 150px;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    border-radius: 8px;
+    background: #f7fdf6;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+  }
+
+  .feature_section .feature_container .box .detail-box {
+    margin-top: auto;
+    flex-shrink: 0;
+  }
+
+  .feature_section .feature_container .box .detail-box h5 {
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+    color: #2c3e50;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+  }
+
+  .feature_section .feature_container .box:hover .detail-box h5 {
+    color: #7c217c;
+  }
+
+  .feature_section .feature_container .box .detail-box p {
+    margin-bottom: 0;
+    line-height: 1.6;
+    color: #6c757d;
+    font-size: 0.95rem;
+  }
+
+  /* Responsive Design */
+  @media (max-width: 1200px) {
+    .feature_section .feature_container {
+      gap: 25px;
+    }
+    
+    .feature_section .feature_container .box {
+      max-width: 320px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .feature_section .feature_container {
+      gap: 20px;
+      padding: 0 15px;
+    }
+    
+    .feature_section .feature_container .box {
+      max-width: 100%;
+      min-height: 350px;
+      padding: 25px 15px;
+    }
+    
+    .feature_section .feature_container .box .img-box {
+      height: 150px;
+      min-height: 150px;
+      margin-bottom: 15px;
+    }
+    
+    .feature_section .feature_container .box .img-box img {
+      max-height: 120px;
+    }
+    
+    .feature_section .feature_container .box .detail-box h5 {
+      font-size: 1.2rem;
+      margin-bottom: 12px;
+    }
+    
+    .feature_section .feature_container .box .detail-box p {
+      font-size: 0.9rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .feature_section .feature_container {
+      gap: 16px;
+      padding: 0 10px;
+    }
+    
+    .feature_section .feature_container .box {
+      min-height: 320px;
+      padding: 20px 12px;
+    }
+    
+    .feature_section .feature_container .box .img-box {
+      height: 120px;
+      min-height: 120px;
+      margin-bottom: 12px;
+    }
+    
+    .feature_section .feature_container .box .img-box img {
+      max-height: 100px;
+    }
+    
+    .feature_section .feature_container .box .detail-box h5 {
+      font-size: 1.1rem;
+      margin-bottom: 10px;
+    }
+    
+    .feature_section .feature_container .box .detail-box p {
+      font-size: 0.85rem;
+    }
+  }
   </style>
 
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
@@ -722,6 +883,7 @@
       }
     });
   </script>
+
 </body>
 
 </html>
